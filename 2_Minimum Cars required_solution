@@ -1,0 +1,37 @@
+/* Minimum Cars required
+
+A single car can accommodate at most 44 people.
+
+NN friends want to go to a restaurant for a party. Find the minimum number of cars required to accommodate all the friends.
+Input Format
+
+    The first line contains a single integer TT - the number of test cases. Then the test cases follow.
+    The first and only line of each test case contains an integer NN - denoting the number of friends.
+    */
+
+
+
+    import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner in=new Scanner(System.in);
+		int t=in.nextInt();
+		while(t-->0)
+		{
+		    int n=in.nextInt();
+		    if(n%4==0)
+		        System.out.println(n/4);
+		    else 
+		        System.out.println((n/4)+1);
+		}
+
+	}
+}
+
+
