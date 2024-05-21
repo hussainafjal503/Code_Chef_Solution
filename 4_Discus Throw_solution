@@ -1,0 +1,36 @@
+/*
+Discus Throw
+
+In discus throw, a player is given 33 throws and the throw with the longest distance is regarded as their final score.
+
+You are given the distances for all 33 throws of a player. Determine the final score of the player.
+Input Format
+
+    First line will contain TT, number of test cases. Then the test cases follow.
+    Each test case contains of a single line of input, three integers A,B,A,B, and CC denoting the distances in each throw.
+
+*/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner in=new Scanner(System.in);
+		int t=in.nextInt();
+		while(t-->0)
+		{
+		    int a=in.nextInt();
+		    int b=in.nextInt();
+		    int c=in.nextInt();
+		    int []arr=new int[]{a,b,c};
+		    Arrays.sort(arr);
+		    System.out.println(arr[2]);
+		}
+
+	}
+}
