@@ -1,0 +1,47 @@
+/*
+Maximise the Tastiness
+
+Chef is making a dish that consists of exactly two ingredients. He has four ingredients A,B,CA,B,C and DD with tastiness a,b,c,a,b,c, and dd respectively. He can use either AA or BB as the first ingredient and either CC or DD as the second ingredient.
+
+The tastiness of a dish is the sum of tastiness of its ingredients. Find the maximum possible tastiness of the dish that the chef can prepare.
+Input Format
+
+    The first line of input will contain a single integer TT, denoting the number of test cases.
+    The first and only line of each test case contains four space-separated integers a,b,c,a,b,c, and dd — the tastiness of the four ingredients.
+
+*/
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+        Scanner in=new Scanner(System.in);
+        int t=in.nextInt();
+        while(t-->0)
+        {
+            int h1=0,h2=0;
+            int []arr=new int[4];
+            for(int i=0;i<4;i++)
+            {
+                arr[i]=in.nextInt();
+            }
+            if(arr[0]>arr[1])
+                h1=arr[0];
+            else
+                h1=arr[1];
+            
+            if(arr[2]>arr[3])
+                h2=arr[2];
+            else
+                h2=arr[3];
+            
+            System.out.println(h1+h2);
+        }
+	}
+}
