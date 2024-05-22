@@ -1,0 +1,41 @@
+/*
+Mario and Transformation
+
+Mario transforms each time he eats a mushroom as follows:
+
+    If he is currently small, he turns normal.
+    If he is currently normal, he turns huge.
+    If he is currently huge, he turns small.
+
+Given that Mario was initially normal, find his size after eating XX mushrooms.
+Input Format
+
+    The first line of input will contain one integer TT, the number of test cases. Then the test cases follow.
+    Each test case contains a single line of input, containing one integer XX.
+
+*/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner in=new Scanner(System.in);
+		int t=in.nextInt();
+		while(t-->0)
+		{
+		    int x=in.nextInt();
+		   if(x%3==0)   
+		        System.out.println("Normal");
+		    else if(x%3==1)
+		        System.out.println("Huge");
+		    else    
+		        System.out.println("Small");
+		}
+
+	}
+}
