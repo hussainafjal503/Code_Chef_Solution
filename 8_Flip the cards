@@ -1,0 +1,44 @@
+/*
+Flip the cards
+
+There are NN cards on a table, out of which XX cards are face-up and the remaining are face-down.
+
+In one operation, we can do the following:
+
+    Select any one card and flip it (i.e. if it was initially face-up, after the operation, it will be face-down and vice versa)
+
+What is the minimum number of operations we must perform so that all the cards face in the same direction (i.e. either all are face-up or all are face-down)?
+Input Format
+
+    The first line contains a single integer TT — the number of test cases. Then the test cases follow.
+    The first and only line of each test case contains two space-separated integers NN and XX — the total number of cards and the number of cards which are initially face-up.
+
+
+*/
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+        Scanner in=new Scanner(System.in);
+        int t=in.nextInt();
+        while(t-->0)
+        {
+            int cards=in.nextInt();
+            int faceup=in.nextInt();
+            int diff=cards-faceup;
+            if(diff>faceup)
+                System.out.println(faceup);
+            else
+                System.out.println(diff);
+            
+           
+        }
+	}
+}
