@@ -1,0 +1,41 @@
+/*
+Police and Thief
+
+Chef discovered that his secret recipe has been stolen. He immediately informs the police of the theft.
+
+It is known that the policeman and thief move on the number line. You are given that:
+
+    The initial location of the policeman on the number line is XX and his speed is 22 units per second.
+    The initial location of the thief on the number line is YY and his speed is 11 unit per second.
+
+Find the minimum time (in seconds) in which the policeman can catch the thief. Note that, the policeman catches the thief as soon as their locations become equal and the thief will try to evade the policeman for as long as possible.
+Input Format
+
+    The first line of input will contain an integer TT — the number of test cases. The description of TT test cases follows.
+    The first and only line of each test case contains two integers XX and YY, as described in the problem statement.
+
+*/
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes 
+		Scanner in=new Scanner(System.in);
+		int t=in.nextInt();
+		while(t-->0)
+		{
+		    int x=in.nextInt();
+		    int y=in.nextInt();
+		    if(x>=y)
+		        System.out.println(x-y);
+		    else
+		        System.out.println(y-x);
+		}
+
+	}
+}
